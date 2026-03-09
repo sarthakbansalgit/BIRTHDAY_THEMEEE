@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"><!-- <![endif]-->
+
+<head>
+	<title>Happy Birthday</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Happy Birthday">
+	<meta name="robots" content="index, follow" />
+	<link rel="author" href="https://plus.google.com/u/1/+SaptheshV/" />
+	<meta name="keywords" content="Birthday, Happy">
+	<!-- Strat of Facebook Meta -->
+	<meta property="og:type" content="E-Greeting" />
+	<meta property="og:image" content="favicon.ico" />
+	<meta property="og:description" content="Wish you a very Happy Birthday">
+	<!-- End of Facebook Meta Tags -->
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="loading.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet/less" href="cake.less">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+	<style>
+		body {
+			font-family: 'Inter', sans-serif;
+			background: #0f0c29;
+			/* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+			background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+			color: #fff;
+		}
+
+		h1,
+		h2,
+		h3,
+		.btn {
+			font-family: 'Outfit', sans-serif;
+		}
+
+		.btn-primary {
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(10px);
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			border-radius: 50px;
+			padding: 12px 30px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			margin: 5px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+			color: #fff;
+			outline: none !important;
+		}
+
+		.btn-primary:hover {
+			background: rgba(255, 255, 255, 0.2);
+			transform: translateY(-5px);
+			box-shadow: 0 8px 25px rgba(255, 105, 180, 0.4);
+			border-color: rgba(255, 105, 180, 0.5);
+			color: #ff69b4;
+		}
+
+		.btn-primary:active,
+		.btn-primary:focus {
+			background: rgba(255, 255, 255, 0.3) !important;
+			border-color: #ff69b4 !important;
+		}
+
+		.message p {
+			font-size: 28px;
+			font-weight: 300;
+			line-height: 1.6;
+			text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+		}
+
+		.message strong {
+			color: #ff69b4;
+			font-weight: 700;
+			font-size: 32px;
+		}
+
+		.navbar-fixed-bottom {
+			padding-bottom: 30px;
+			background: transparent;
+			border: none;
+		}
+
+		.balloons h2 {
+			font-weight: 700;
+			font-size: 50px;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+		}
+
+		@media (max-width: 768px) {
+			.balloons {
+				transform: scale(0.7) !important;
+			}
+
+			.message p {
+				font-size: 22px !important;
+				padding: 0 20px;
+			}
+
+			.balloons h2 {
+				font-size: 40px;
+			}
+
+			.cake {
+				transform: scale(0.9) !important;
+			}
+		}
+
+		/* Overriding some default cake styles for better look */
+		.cake {
+			transform: scale(1.2);
+			margin-top: 50px;
+			transition: all 0.5s ease;
+		}
+
+		.peach {
+			background: radial-gradient(circle, #ff9a9e 0%, #fecfef 99%, #fecfef 100%) !important;
+		}
+
+		.peach-after {
+			background: radial-gradient(circle, #a1c4fd 0%, #c2e9fb 100%) !important;
+			animation: none !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="loading"></div>
+	<audio class="song" controls loop>
+		<source src="hbd.mp3">
+		</source>
+		Your browser isn't invited for super fun audio time.
+	</audio>
+	<div class="balloons text-center" id="b1">
+		<h2 style="color:#FF1493;">S</h2>
+	</div>
+	<div class="balloons text-center" id="b2">
+		<h2 style="color:#DA70D6;">H</h2>
+	</div>
+	<div class="balloons text-center" id="b3">
+		<h2 style="color:#9370DB;">R</h2>
+	</div>
+	<div class="balloons text-center" id="b4">
+		<h2 style="color:#FF69B4;">E</h2>
+	</div>
+	<div class="balloons text-center" id="b5">
+		<h2 style="color:#BA55D3;">Y</h2>
+	</div>
+	<div class="balloons text-center" id="b6">
+		<h2 style="color:#DA70D6;">A</h2>
+	</div>
+	<div class="balloons text-center" id="b7">
+		<h2 style="color:#FF1493;">A</h2>
+	</div>
+
+	<img src="Balloon-Border.png" width="100%" class="balloon-border">
+
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_yellow"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_red"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_blue"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_green"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_pink"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_orange"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="banner.png" class="bannar">
+			</div>
+		</div>
+		<div class="row cake-cover">
+			<div class="col-md-12 texr-center">
+				<div class="cake">
+					<div class="velas">
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+					</div>
+					<div class="cobertura"></div>
+					<div class="bizcocho"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row message">
+			<div class="col-md-12">
+				<p>In the quiet corners of the world...</p>
+				<p>Some souls just shine differently.</p>
+				<p>They don't need a spotlight to be radiant.</p>
+				<p>Shreyaa, you are one of those rare souls.</p>
+				<p>You carry a gentle magic within you.</p>
+				<p><strong>A magic that turns ordinary days into memories.</strong></p>
+				<p>Your kindness isn't just a word,</p>
+				<p>It's the way you listen, the way you care.</p>
+				<p>Your strength isn't just about holding on,</p>
+				<p>It's about the grace with which you move forward.</p>
+				<p>Today, as another year unfolds before you,</p>
+				<p>I want you to look in the mirror and see...</p>
+				<p>The incredible person you've become.</p>
+				<p>A dreamer with eyes full of stars,</p>
+				<p>A friend with a heart full of gold.</p>
+				<p>You've faced challenges with a smile,</p>
+				<p>And celebrated joys with an open heart.</p>
+				<p>May this year be your most vibrant one yet.</p>
+				<p>May your ambitions take you to new heights,</p>
+				<p>And your passions keep your spirit alive.</p>
+				<p>May you find beauty in the smallest things,</p>
+				<p>Like the first light of dawn or a shared laugh.</p>
+				<p>Remember that you are enough,</p>
+				<p>Exactly as you are, perfectly imperfect.</p>
+				<p>Don't ever hide your sparkle from the world.</p>
+				<p>Because the world needs your light, Shreyaa.</p>
+				<p>It needs your perspective, your voice, your heart.</p>
+				<p>So as you blow out your candles today,</p>
+				<p>Don't just make a wish for yourself...</p>
+				<p>Make a promise to yourself.</p>
+				<p>To keep growing, to keep loving, to keep being you.</p>
+				<p>Because there is only one Shreyaa in this universe.</p>
+				<p>And she is absolutely, undeniably magnificent.</p>
+				<p>Indeed..</p>
+				<p>The journey is long and winding,</p>
+				<p>But with you, every step is worth taking.</p>
+				<p>So here's to the laughter we've shared,</p>
+				<p>And the many more miles left to go.</p>
+				<p>Keep that spirit wild and free.</p>
+				<p>Flying high like these balloons in the sky.</p>
+				<p>Happy Birthday, my dear Shreyaa.</p>
+				<p>May your day be as beautiful as your soul.</p>
+				<p>And may your life be the greatest adventure of all.</p>
+				<p>Lastly...</p>
+				<p>One more time, with all the love...</p>
+				<p>The warmest, biggest wish just for you...</p>
+				<p>HAPPY BIRTHDAY SHREYAA! ❤️✨</p>
+			</div>
+		</div>
+		<div class="navbar navbar-fixed-bottom">
+			<div class="row">
+				<div class="col-md-6 text-center col-md-offset-3">
+					<button class="btn btn-primary" id="turn_on">Turn On Lights</button>
+					<button class="btn btn-primary" id="play">Play Music</button>
+					<button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
+					<button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
+					<button class="btn btn-primary" id="cake_fadein">The Birthday Cake</button>
+					<button class="btn btn-primary" id="light_candle"> Light Candle</button>
+					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
+					<button class="btn btn-primary" id="story">A message for you</button>
+					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
+				</div>
+			</div>
+			<!-- <div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div> -->
+		</div>
+
+
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="effect.js"></script>
+
+</html>
